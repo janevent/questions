@@ -2,8 +2,7 @@ let divEl = document.getElementById('divElement');
 divEl.addEventListener('click', doSomething);
 divEl.addEventListener('keydown', (event) => {
     if(event.code=== 'space' || event.code === 'enter'){
-        doSomething()
-        // or divEl.click()
+        divEl.click()
     }
 })
 function doSomething(){
